@@ -21,6 +21,11 @@
       }
       return "";
     }
+   $.get('log.json', function(response) {
+	document.cookie = "nama="+response.nama;
+	document.cookie = "slug="+response.slug;
+	document.cookie = "pkg="+response.pkg;
+   });
     </script>
     </head>
     <body>
